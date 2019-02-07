@@ -1,11 +1,203 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Vanessa Huertas</title>
-		<link rel="stylesheet" type="text/css" href="CSS/style.css">
-	</head>
-	<body>
-		<h1>Hello World!</h1>
-	</body>
-</html>
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<title>Vanessa Huertas</title>
+
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+			<!-- Font -->
+
+			<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+			<!-- Stylesheets -->
+
+			<link href="CSS/bootstrap.css" rel="stylesheet">
+
+			<link href="CSS/ionicons.css" rel="stylesheet">
+
+			<link href="CSS/layerslider.css" rel="stylesheet">
+
+			<link href="CSS/responsive.css" rel="stylesheet">
+
+
+			<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+			<link rel="icon" type="image/png" href="images/icon.png" />
+
+		</head>
+		<body>
+			<header>
+				<div class="bottom-area">
+					<div id = "Name">
+						<img src = "images/first.png" alt = "decoration">
+					</div>
+					<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
+					
+					<ul class="main-menu visible-on-click" id="main-menu">
+						<li><a href="#PersonalInformation">ABOUT ME</a></li>
+						<li><a href="#Projects">PROJECTS</a></li>
+						<li><a href="#ILike">WHAT I LIKE</a></li>
+						<li><a href="#Training">ACADEMIC TRAINING</a></li>
+						<li><a href="#Experience">EXPERIENCE</a></li>
+						<li><a href="#Contact">CONTACT</a></li>
+					</ul>
+				</div>
+			</header>
+			<div>
+				<div id="PersonalInformation">		
+					<div id = "PersonalGrid">	
+						<div class = "Profile">
+							<div class = "about">
+								<img src = "images/aboutme.png" alt = "aboutme">	
+								<p>
+									My name is TATIANA VANESSA HUERTAS BOLAÑOS and I am twenty years old. I am a seventh semester student of Systems and Computing Engineering in Los Andes university. Currently, I am living in Madrid - Cundinamarca, but I was born in Pasto - Nariño.
+								</p>
+							</div>
+						</div> 
+						<div class = "Profile">
+							<img src = "images/pic.jpg" alt = "profile" >
+						</div>
+					</div>
+					<img src = "images/footaboutme.png" alt = "footaboutme">
+				</div>
+				<div id="Projects">
+				
+					<img src = "images/projects.png" alt = "projects">
+
+					<div id = "ProjectsGrid">
+						<div class = "logo">
+							<img src = "images/food.png" alt = "habits">
+						</div>
+						<div class = "logo">
+							<img src = "images/softsecurity.png" alt = "softsecurity">
+						</div>
+						<div class = "logo">
+							<img src = "images/shadocs.jpg" alt = "shadocs">
+						</div>
+					</div>
+				</div>
+				<div id="ILike">
+					Música, baile, TXONE logo, cantar, música que me gusta. Leer, libros que me gustan.
+					<div class="main-slider">
+						<div id="slider">
+
+							<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:4000; transition2d:104; kenburnsscale:1.00;">
+							<img src="images/music.png" class="ls-bg" alt="" />
+
+								<!--<div class="slider-content ls-l" style="top:60%; left:30%;" data-ls="offsetyin:100%; offsetxout:-50%; durationin:800; delayin:100; durationout:400; parallaxlevel:0;">
+									<a class="btn" href="#">TRAVEL</a>
+									<h3 class="title"><b>Travel, Love, Live</b></h3>
+									<h6>29 October, 2017</h6>
+								</div>-->
+
+							</div><!-- ls-slide -->
+
+							<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:4000; transition2d:104; kenburnsscale:1.00;">
+							<img src="images/dance.png" class="ls-bg" alt="" />
+
+								<!--<div class="slider-content ls-l" style="top:60%; left:30%;" data-ls="offsetyin:100%; offsetxout:-50%; durationin:800; delayin:100; durationout:400; parallaxlevel:0;">
+									<a class="btn" href="#">TRAVEL</a>
+									<h3 class="title"><b>Travel, Love, Live</b></h3>
+									<h6>29 October, 2017</h6>
+								</div>-->
+
+							</div><!-- ls-slide -->
+
+						</div><!-- slider -->
+					</div><!-- main-slider -->
+				</div>
+				<div id="Training">
+					Actual estudiante de ingeniería de sistemas en la universidad de los andes. Bachiller técnico del instituto diversificado Albert Einstein.
+				</div>
+				<div id="Experience">
+					Un poco de HTML, un poco de CSS, un poco de C++, un poco de Python, Java, un poco de Angular, un poco de Android, SQL
+					
+					<div class="col-lg-4 text-center">
+						<h2 class="panel-title mt-md">Sales Goal</h2>
+						<div class="liquid-meter-wrapper liquid-meter-sm mt-lg">
+							<div class="liquid-meter">
+								<meter min="0" max="100" value="35" id="meterSales"></meter>
+							</div>
+							<div class="liquid-meter-selector" id="meterSalesSel">
+								<a href="#" data-val="35" class="active">Monthly Goal</a>
+								<a href="#" data-val="28">Annual Goal</a>
+							</div>
+						</div>
+					</div>
+					
+					
+					<!--<div class="row">
+            			<div class="col-xs-12">
+              			<div class="box box-solid">
+			                <div class="box-header">
+            			      <i class="fa fa-bar-chart-o"></i>
+			                  <h3 class="box-title">Experience</h3>
+            			      <div class="box-tools pull-right">
+			                    <button class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            			        <button class="btn btn-default btn-sm" data-widget="remove"><i class="fa fa-times"></i></button>
+			                  </div>
+            			    </div>--><!-- /.box-header -->
+  			              <!--<div class="box-body">
+  			                <div class="row">
+            			        <div class="col-md-3 col-sm-6 col-xs-6 text-center">
+			                      <input type="text" class="knob" value="60" data-skin="tron" data-thickness="0.2" data-width="120" data-height="120" data-fgColor="#f56954"/>
+            			          <div class="knob-label">HTML</div>
+                    			</div>--><!-- ./col -->
+                    			<!--<div class="col-md-3 col-sm-6 col-xs-6 text-center">
+			                      <input type="text" class="knob" value="60" data-skin="tron" data-thickness="0.2" data-width="120" data-height="120" data-fgColor="#f56954"/>
+            			          <div class="knob-label">SQL</div>
+                    			</div>--><!-- ./col -->
+                    			<!--<div class="col-md-3 col-sm-6 col-xs-6 text-center">
+			                      <input type="text" class="knob" value="60" data-skin="tron" data-thickness="0.2" data-width="120" data-height="120" data-fgColor="#f56954"/>
+            			          <div class="knob-label">Android</div>
+                    			</div>--><!-- ./col -->
+                    			<!--<div class="col-md-3 col-sm-6 col-xs-6 text-center">
+			                      <input type="text" class="knob" value="60" data-skin="tron" data-thickness="0.2" data-width="120" data-height="120" data-fgColor="#f56954"/>
+            			          <div class="knob-label">C++</div>
+                    			</div>--><!-- ./col -->
+                    			<!--<div class="col-md-3 col-sm-6 col-xs-6 text-center">
+			                      <input type="text" class="knob" value="60" data-skin="tron" data-thickness="0.2" data-width="120" data-height="120" data-fgColor="#f56954"/>
+            			          <div class="knob-label">Python</div>
+                    			</div>--><!-- ./col -->
+                    			<!--<div class="col-md-3 col-sm-6 col-xs-6 text-center">
+			                      <input type="text" class="knob" value="60" data-skin="tron" data-thickness="0.2" data-width="120" data-height="120" data-fgColor="#f56954"/>
+            			          <div class="knob-label">Angular</div>
+                    			</div>--><!-- ./col -->
+                    			<!--<div class="col-md-3 col-sm-6 col-xs-6 text-center">
+			                      <input type="text" class="knob" value="60" data-skin="tron" data-thickness="0.2" data-width="120" data-height="120" data-fgColor="#f56954"/>
+            			          <div class="knob-label">Java</div>
+                    			</div>--><!-- ./col -->
+                    			<!--<div class="col-md-3 col-sm-6 col-xs-6 text-center">
+			                      <input type="text" class="knob" value="60" data-skin="tron" data-thickness="0.2" data-width="120" data-height="120" data-fgColor="#f56954"/>
+            			          <div class="knob-label">CSS</div>
+                    			</div>--><!-- ./col -->
+            			      <!--</div> /.row -->
+ 			               <!--</div> /.box-body -->
+            			 <!-- </div> /.box -->
+   			        	<!-- </div> /.col -->
+        			 <!-- </div> /.row -->
+				</div><!--Experience -->
+				<div id="Contact">
+					<div class="top-menu">
+						<ul class="left-area welcome-area">
+							<li class="contactInformation">This is a brief of my life. My e-mail contact is:</li>
+							<li><a href="mailto:tvanessahb203@gmail.com">tvanessahb203@gmail.com</a></li>
+						</ul>
+
+						<div class="right-area">
+
+							<ul class="social-icons">
+								<li><a href="https://www.facebook.com/TVanessaHB"><i class="ion-social-facebook-outline"></i></a></li>
+								<li><a href="https://twitter.com/TVanessaH8"><i class="ion-social-twitter-outline"></i></a></li>
+								<li><a href="https://www.instagram.com/31history13/?hl=es-la"><i class="ion-social-instagram-outline"></i></a></li>
+								<li><a href="https://www.youtube.com/channel/UCCamln1CzcMYqnB-jEa2X2Q?view_as=subscriber"><i class="ion-social-youtube-outline"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
