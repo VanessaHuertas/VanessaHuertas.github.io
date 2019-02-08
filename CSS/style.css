@@ -445,20 +445,139 @@ header + div {
 }
 
 #ILike {
+	display: block;
 	background-color: grey;
 }
 
 #Training {
+	display: block;
 	background-color: darkgrey;
 }
 
+#Training > #TrainingGrid {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+#Training > #TrainingGrid > .GridRightImage > img{
+	float: right;
+	position: relative;
+	border: 6px solid white ;
+	top: 20px;
+	bottom: 5px;
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	right: 20px;
+}
+
+#Training > #TrainingGrid > .GridLeftImage > img{
+	float: left;
+	position: relative;
+	border: 6px solid white ;
+	border-radius: 50%;
+	top:5px;
+	width: 400px;
+	height: 400px;
+	left: 20px;
+}
+
 #Experience {
+	display: block;
 	background-color: #a4d300;
+}
+
+#Experience > .col-lg-4 > .panel-title {
+    color: #33353f;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0;
+    text-transform: none;
+}
+
+.mt-lg {
+    margin-top: 20px!important;
+}
+
+text[Attributes Style] {
+	fill: #8c8c8c;
+	stroke: #8c8c8c ;
+}
+
+#Experience > #ExperienceGrid {
+	display:grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+#Experience > #ExperienceGrid > #ExperienceTop{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#Experience > #ExperienceGrid > #ExperienceTop:nth-child(1){
+	padding: 35px;
+}
+
+#Experience > #ExperienceGrid > #ExperienceTop:nth-child(2){
+	padding: 35px;
+}
+
+#Experience > #ExperienceGrid > #ExperienceTop:nth-child(3){
+	padding: 35px;
+}
+
+#Experience > #ExperienceGrid > #ExperienceMiddle{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#Experience > #ExperienceGrid > #ExperienceMiddle:nth-child(1){
+	padding: 35px;
+}
+
+#Experience > #ExperienceGrid > #ExperienceMiddle:nth-child(2){
+	padding: 35px;
+}
+
+#Experience > #ExperienceGrid > #ExperienceMiddle path[Attributes Style] {
+	fill: #8c8c8c;
+	mask: url(#CSS);
+	stroke: #33bbff;
+	d:path("M 0 100.4 C 113.4 100.4 150.4 130.4 250 400.4 L 220 320 L 0 220 Z")
+}
+
+#Experience > #ExperienceGrid > #ExperienceMiddle path[Attributes Style] {
+	fill: #8c8c8c;
+	mask: url(#ANGULAR);
+	stroke: #33bbff;
+	d:path("M 0 300.4 C 113.4 100.4 150.4 130.4 250 400.4 L 220 320 L 0 220 Z")
+}
+
+#Experience > #ExperienceGrid > #ExperienceBottom{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#Experience > #ExperienceGrid > #ExperienceBottom:nth-child(1){
+	padding: 35px;
+}
+
+#Experience > #ExperienceGrid > #ExperienceBottom:nth-child(2){
+	padding: 35px;
+}
+
+#Experience > #ExperienceGrid > #ExperienceBottom:nth-child(3){
+	padding: 35px;
+}
+
+#Experience > img {
+	padding: 100px;
 }
 
 /* Liquid Meter */
 .liquid-meter-wrapper .liquid-meter-selector a.active {
-	color: #0088cc;
+	color: #8c8c8c;
 }
 
 .liquid-meter {
@@ -479,55 +598,6 @@ header + div {
 
 		&:before {
 			display: none;
-		}
-	}
-}
-
-.liquid-meter-wrapper {
-	&.liquid-meter-xs {
-		.liquid-meter {
-			max-height: 120px;
-			max-width: 120px;
-		}
-	}
-	&.liquid-meter-sm {
-		.liquid-meter {
-			max-height: 150px;
-			max-width: 150px;
-		}
-	}
-	&.liquid-meter-md {
-		.liquid-meter {
-			max-height: 200px;
-			max-width: 200px;
-		}
-	}
-	&.liquid-meter-lg {
-		.liquid-meter {
-			max-height: 230px;
-			max-width: 230px;
-		}
-	}
-
-	.liquid-meter-selector {
-		margin-top: 3px;
-		a {
-			text-transform: uppercase;
-			font-weight: $font-weight-light;
-			font-size: 11px;
-			color: #9b9b9b;
-			border-right: 1px solid #e4e4e4;
-			display: inline-block;
-			padding-right: 8px;
-			margin-right: 8px;
-			&.active {
-				color: $color-primary;
-			}
-			&:last-child {
-				border-right: 0;
-				padding-right: 0;
-				margin-right: 0;
-			}
 		}
 	}
 }
